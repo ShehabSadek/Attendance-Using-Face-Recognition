@@ -26,7 +26,7 @@ def Fill_Csv():
 
 def Rename_Files():
     BASE_DIR=os.path.dirname(os.path.abspath(__file__))
-    training_folder=os.path.join(BASE_DIR,"Images\Training")
+    training_folder=os.path.join(BASE_DIR,"Images/Training")
 
     for root,dirs,files in os.walk(training_folder):
         Names.append(os.path.basename(os.path.normpath(root))) 
