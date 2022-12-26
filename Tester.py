@@ -41,5 +41,5 @@ def recognizer(path):
                 print(colored("ID {}".format(_id),'green'),colored(", Conf {}".format(conf),'red'))
                 cv.rectangle(img,(x,y),(x+w,y+h),(0,255,0),2)
                 cv.putText(img,labels[_id],(x+2,y),cv.FONT_HERSHEY_COMPLEX_SMALL,1,(0,0,255),2,cv.LINE_AA)
-            # cv.imshow("face_detection",img)
-            # cv.waitKey(0)
+            cv.imshow("face_detection",img)
+            cv.waitKey(0)
